@@ -1,0 +1,20 @@
+.alert{
+  background: $white;
+  margin-top: .5rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+
+  .inner{
+    @extend .container;
+    text-align: center;
+  }
+
+  p, a{
+    margin: 0;
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-family: $secondary-font-family;
+    font-size: .875rem;
+    letter-spacing: 1.5px;
+  }
+}

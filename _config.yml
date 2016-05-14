@@ -1,0 +1,3 @@
+title: "Buddy Foundation"
+baseurl: "/buddyfoundation"
+exclude: ['node_modules', '_scss', 'gulpfile.js', 'package.json']

@@ -1,0 +1,42 @@
+.site-footer{
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    text-align: left;
+  }
+
+  .info{
+    padding: 2rem 0;
+    background: $secondary-color;
+  }
+
+  .brand{
+    display: block;
+    margin-bottom: 1rem;
+    color: $primary-color;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  .engagement{
+    padding: 2rem 0;
+    background: $primary-color;
+    color: $white;
+  }
+}
+
+.hours{
+  @extend .unstyled-list;
+  margin-top: 1rem;
+
+  li{
+    margin-bottom: .5rem;
+  }
+
+  span{
+    display: inline-block;
+  }
+
+  .hours-days{
+    margin-right: .5rem;
+  }
+}

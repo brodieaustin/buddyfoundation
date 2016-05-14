@@ -1,0 +1,54 @@
+.site-nav{
+  margin-top: 3.75rem;
+  display: none;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    display: block;
+    float: right;
+  }
+}
+
+.nav{
+  @extend .unstyled-list;
+
+  li{
+    display: inline-block;
+  }
+
+  a{
+    display: block;
+    margin-left: 1rem;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: $secondary-color;
+
+    @media screen and (#{$bp-larger-than-desktop}){
+      margin-left: 3rem;
+    }
+  }
+}
+
+.mobile-nav-control {
+  position: relative;
+  top: .5rem;
+  display: inline-block;
+  float: right;
+  padding: .375rem .5rem;
+  color: $font-color;
+  background: $primary-color;
+  border-color: transparent;
+  font-size: 1.5rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    display: none;
+  }
+}
+
+.mobile-nav-open:before {
+  content: '\2630';
+}
+
+.mobile-nav-close:before {
+  content: '\00D7';
+}

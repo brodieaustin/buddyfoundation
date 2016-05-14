@@ -1,0 +1,23 @@
+.social{
+  @extend .unstyled-list;
+  margin-top: 2rem;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    float: right;
+    margin-top: 0;
+  }
+
+  li{
+    display: inline-block;;
+
+    a{
+      display: block;
+    }
+  }
+
+  svg{
+    height: 2rem;
+    width: 2rem;
+    fill: $dark-grey;
+  }
+}

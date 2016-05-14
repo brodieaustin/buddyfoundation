@@ -1,0 +1,80 @@
+.homepage-section{
+  padding: 2rem 0;
+  text-align: center;
+
+  h2{
+    margin-bottom: 1.5rem;
+  }
+
+  .button{
+    margin-bottom: 0;
+  }
+
+  img{
+    @extend .responsive-img;
+  }
+}
+
+.hero{
+  padding: 4rem 0;
+  background: $secondary-color;
+
+  img{
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+  }
+
+  .location{
+    display: block;
+    margin-top: 2rem;
+    color: $primary-color;
+  }
+
+  svg{
+    display: inline-block;
+    width: 1rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+  }
+}
+
+.featured-buddies{
+  @extend .homepage-section;
+  padding-top: 4rem;
+
+  .buddies{
+    margin-bottom: 2rem;
+  }
+}
+
+.upcoming-events{
+  @extend .homepage-section;
+
+  a{
+    display: block;
+    padding: 1rem;
+    background: $secondary-color;
+    text-align: left;
+    color: $primary-color;
+
+    p{
+      margin-top: .5rem;
+      margin-bottom: 0;
+      font-size: .875rem;
+    }
+  }
+}
+
+.help{
+  @extend .homepage-section;
+
+  .help-text{
+    max-width: 80%;
+    margin: 0 auto 4rem auto;
+
+    h3{
+      margin-bottom: 1rem;
+    }
+  }
+}

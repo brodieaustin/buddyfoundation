@@ -1,0 +1,27 @@
+.page{
+  @extend .container;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+
+  @media screen and (#{$bp-larger-than-phablet}){
+    max-width: 60%;
+    padding-bottom: 4rem;
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    max-width: 40%;
+  }
+
+  a{
+    border-bottom: 1px solid darken($primary-color, 10%);
+  }
+
+  figure{
+    margin: 1rem auto;
+  }
+
+}
+
+.gallery{
+  margin-top: 2rem;
+}
