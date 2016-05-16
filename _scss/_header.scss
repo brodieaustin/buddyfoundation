@@ -1,10 +1,18 @@
 .site-header{
   background: $primary-color;
   overflow: hidden;
-}
 
-.brand{
-  position: relative;
-  bottom: -.8rem;
-  display: inline-block;
+  .brand{
+    position: relative;
+    bottom: -.5rem;
+    display: inline-block;
+    width: 7rem;
+    height: auto;
+
+    @media (#{$bp-larger-than-tablet}) {
+      width: 9.25rem;
+      height: auto;
+    }
+  }
+
 }

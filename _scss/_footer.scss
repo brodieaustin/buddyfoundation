@@ -4,6 +4,10 @@
     text-align: left;
   }
 
+  a{
+    color: $primary-color;
+  }
+
   .info{
     padding: 2rem 0;
     background: $secondary-color;
@@ -11,22 +15,14 @@
 
   .brand{
     display: block;
-    margin-bottom: 1rem;
     color: $primary-color;
     font-size: 1.125rem;
     text-transform: uppercase;
-  }
-
-  .engagement{
-    padding: 2rem 0;
-    background: $primary-color;
-    color: $white;
   }
 }
 
 .hours{
   @extend .unstyled-list;
-  margin-top: 1rem;
 
   li{
     margin-bottom: .5rem;
@@ -38,5 +34,17 @@
 
   .hours-days{
     margin-right: .5rem;
+    font-style: italic;
+  }
+}
+
+.newsletter{
+  clear: both;
+
+  p{
+    margin-bottom: .375rem;
+  }
+  a{
+    text-decoration: underline;
   }
 }

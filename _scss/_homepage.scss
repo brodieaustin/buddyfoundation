@@ -4,7 +4,6 @@
 
   h2{
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid $accent-color;
   }
 
   .button{
@@ -20,16 +19,35 @@
   padding: 4rem 0;
   background: $secondary-color;
 
+  h1{
+    position: relative;
+    font-size: 2rem;
+    z-index: 500;
+
+    @media (#{$bp-larger-than-tablet}) {
+      max-width: 35rem;
+      font-size: 2.25rem;
+    }
+  }
+
   img{
-    position: absolute;
-    top: -2.5rem;
-    right: 0;
+    max-width: 100%;
+    height: auto;
+
+    @media (#{$bp-larger-than-desktop}) {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      z-index: 100;
+    }
   }
 
   .location{
     display: block;
     margin-top: 2rem;
     color: $primary-color;
+    text-indent: -1.75rem;
+    padding-left: 1.75rem;
   }
 
   svg{
@@ -46,6 +64,16 @@
 
   .buddies{
     margin-bottom: 2rem;
+
+    a{
+      display: block;
+      margin-bottom: 1rem;
+
+      @media (#{$bp-larger-than-phablet}) {
+        margin-bottom: 0;
+      }
+
+    }
   }
 }
 
@@ -54,10 +82,15 @@
 
   a{
     display: block;
+    margin-bottom: 1rem;
     padding: 1rem;
     background: $secondary-color;
     text-align: left;
     color: $primary-color;
+
+    @media (#{$bp-larger-than-phablet}) {
+      margin-bottom: 0;
+    }
 
     p{
       margin-top: .5rem;

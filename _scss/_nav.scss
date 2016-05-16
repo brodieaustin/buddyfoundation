@@ -1,5 +1,5 @@
 .site-nav{
-  margin-top: 3.75rem;
+  margin-top: 4.375rem;
   display: none;
 
   @media screen and (#{$bp-larger-than-tablet}){
@@ -31,13 +31,14 @@
 
 .mobile-nav-control {
   position: relative;
-  top: .5rem;
+  top: 2rem;
   display: inline-block;
   float: right;
   padding: .375rem .5rem;
-  color: $font-color;
+  color: $secondary-color;
   background: $primary-color;
   border-color: transparent;
+  font-family: $secondary-font-family;
   font-size: 1.5rem;
 
   @media screen and (#{$bp-larger-than-tablet}){
