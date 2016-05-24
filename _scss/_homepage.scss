@@ -17,7 +17,14 @@
 
 .hero{
   padding: 4rem 0;
-  background: $secondary-color;
+  background: $secondary-color url('/assets/img/collie2.jpg') no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+
+  @media (#{$bp-larger-than-tablet}) {
+    background-position: 80% top;
+  }
 
   h1{
     position: relative;
@@ -30,9 +37,33 @@
     }
   }
 
+  video{
+    position: absolute;
+    top: 0;
+    left: -12rem;
+    height: 100%;
+    -webkit-filter: brightness(.9);
+    filter: brightness(.9);
+
+    @media (#{$bp-larger-than-mobile}) {
+      left: -6rem;
+    }
+
+    @media (#{$bp-larger-than-tablet}) {
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+
+    @media (#{$bp-larger-than-desktop}){
+      top: -6rem;
+    }
+  }
+
   img{
     max-width: 100%;
     height: auto;
+    display: none;
 
     @media (#{$bp-larger-than-desktop}) {
       position: absolute;
@@ -55,49 +86,17 @@
     width: 1rem;
     margin-right: .5rem;
     vertical-align: middle;
+    fill: $white;
   }
 }
 
 .featured-buddies{
   @extend .homepage-section;
   padding-top: 4rem;
-
-  .buddies{
-    margin-bottom: 2rem;
-
-    a{
-      display: block;
-      margin-bottom: 1rem;
-
-      @media (#{$bp-larger-than-phablet}) {
-        margin-bottom: 0;
-      }
-
-    }
-  }
 }
 
 .upcoming-events{
   @extend .homepage-section;
-
-  a{
-    display: block;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: $secondary-color;
-    text-align: left;
-    color: $primary-color;
-
-    @media (#{$bp-larger-than-phablet}) {
-      margin-bottom: 0;
-    }
-
-    p{
-      margin-top: .5rem;
-      margin-bottom: 0;
-      font-size: .875rem;
-    }
-  }
 }
 
 .help{

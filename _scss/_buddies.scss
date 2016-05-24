@@ -1,0 +1,26 @@
+.buddies{
+  @extend .unstyled-list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (#{$bp-larger-than-phablet}) {
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+  }
+
+  li{
+    width: 100%;
+    margin: 0 auto 2rem;
+
+    @media (#{$bp-larger-than-tablet}) {
+      width: calc(33.3333% - 2rem);
+      margin-left: 2rem;
+    }
+
+    a{
+      display: block;
+    }
+
+  }
+}

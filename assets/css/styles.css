@@ -706,7 +706,7 @@ a {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px); }
 
-.unstyled-list, .nav, .hours, .social {
+.unstyled-list, .nav, .hours, .social, .buddies, .events {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -885,7 +885,13 @@ a {
 
 .hero {
   padding: 4rem 0;
-  background: #d7e8f7; }
+  background: #d7e8f7 url("/assets/img/collie2.jpg") no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 750px) {
+    .hero {
+      background-position: 80% top; } }
   .hero h1 {
     position: relative;
     font-size: 2rem;
@@ -894,9 +900,28 @@ a {
       .hero h1 {
         max-width: 35rem;
         font-size: 2.25rem; } }
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: -12rem;
+    height: 100%;
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9); }
+    @media (min-width: 400px) {
+      .hero video {
+        left: -6rem; } }
+    @media (min-width: 750px) {
+      .hero video {
+        left: 0;
+        height: auto;
+        width: 100%; } }
+    @media (min-width: 1000px) {
+      .hero video {
+        top: -6rem; } }
   .hero img {
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    display: none; }
     @media (min-width: 1000px) {
       .hero img {
         position: absolute;
@@ -913,33 +938,11 @@ a {
     display: inline-block;
     width: 1rem;
     margin-right: .5rem;
-    vertical-align: middle; }
+    vertical-align: middle;
+    fill: #fff; }
 
 .featured-buddies {
   padding-top: 4rem; }
-  .featured-buddies .buddies {
-    margin-bottom: 2rem; }
-    .featured-buddies .buddies a {
-      display: block;
-      margin-bottom: 1rem; }
-      @media (min-width: 550px) {
-        .featured-buddies .buddies a {
-          margin-bottom: 0; } }
-
-.upcoming-events a {
-  display: block;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background: #d7e8f7;
-  text-align: left;
-  color: #00274d; }
-  @media (min-width: 550px) {
-    .upcoming-events a {
-      margin-bottom: 0; } }
-  .upcoming-events a p {
-    margin-top: .5rem;
-    margin-bottom: 0;
-    font-size: .875rem; }
 
 .help .help-text {
   max-width: 80%;
@@ -964,3 +967,66 @@ a {
 
 .gallery {
   margin-top: 2rem; }
+
+.buddies {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  @media (min-width: 550px) {
+    .buddies {
+      margin-left: -2rem;
+      margin-bottom: 2rem; } }
+  .buddies li {
+    width: 100%;
+    margin: 0 auto 2rem; }
+    @media (min-width: 750px) {
+      .buddies li {
+        width: -webkit-calc(33.3333% - 2rem);
+        width: calc(33.3333% - 2rem);
+        margin-left: 2rem; } }
+    .buddies li a {
+      display: block; }
+
+.events {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  @media (min-width: 750px) {
+    .events {
+      margin-left: -2rem; } }
+  .events li {
+    width: 100%;
+    margin-bottom: 1rem; }
+    @media (min-width: 750px) {
+      .events li {
+        width: -webkit-calc(50% - 2rem);
+        width: calc(50% - 2rem);
+        margin-left: 2rem;
+        margin-bottom: 2rem; } }
+    @media (min-width: 1000px) {
+      .events li {
+        width: -webkit-calc(25% - 2rem);
+        width: calc(25% - 2rem);
+        margin-left: 2rem;
+        margin-bottom: 0; } }
+    .events li a {
+      display: block;
+      padding: 1rem;
+      background: #d7e8f7;
+      text-align: left;
+      color: #00274d; }
+      @media (min-width: 550px) {
+        .events li a {
+          margin-bottom: 0; } }
+      .events li a p {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        font-size: .875rem; }
