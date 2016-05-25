@@ -1,27 +1,51 @@
 .page{
-  @extend .container;
-  margin-top: 2rem;
-  padding-bottom: 3rem;
 
-  @media screen and (#{$bp-larger-than-phablet}){
-    max-width: 60%;
-    padding-bottom: 4rem;
+  header{
+    padding: 2rem 0;
+    background: $secondary-color;
+
+    h1{
+      text-transform: uppercase;
+    }
+
+    p{
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
-
-  @media screen and (#{$bp-larger-than-desktop}){
-    max-width: 40%;
-  }
-
-  a{
-    border-bottom: 1px solid darken($primary-color, 10%);
-  }
-
-  figure{
-    margin: 1rem auto;
-  }
-
 }
 
-.gallery{
-  margin-top: 2rem;
+.content{
+  padding: 3rem 0;
+}
+
+.section-label{
+  display: inline-block;
+  margin-bottom: .125rem;
+  font-size: .625rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.more{
+  max-width: 60%;
+  margin: auto;
+  padding: 2rem 0 0;
+  text-align: center;
+
+  h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.page-extras{
+
+  .favorite{
+    float: right;
+  }
+  
 }

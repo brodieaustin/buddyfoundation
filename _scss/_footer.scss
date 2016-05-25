@@ -1,7 +1,10 @@
 .site-footer{
+  padding-bottom: 5rem;
+  background: $secondary-color url(/assets/img/cat-dog.jpg) no-repeat 80% bottom;
 
   @media screen and (#{$bp-larger-than-tablet}){
     text-align: left;
+    padding-bottom: 0;
   }
 
   a{
@@ -10,7 +13,16 @@
 
   .info{
     padding: 2rem 0;
-    background: $secondary-color;
+  }
+
+  .engage{
+    padding: 2rem 0;
+    background: $primary-color;
+    color: $secondary-color;
+
+    a{
+      color: $accent-color;
+    }
   }
 
   .brand{
@@ -46,5 +58,6 @@
   }
   a{
     text-decoration: underline;
+    text-transform: uppercase;
   }
 }

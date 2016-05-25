@@ -2,8 +2,8 @@
   @extend .unstyled-list;
   margin-top: 2rem;
 
-  @media screen and (#{$bp-larger-than-tablet}){
-    margin-top: 0;
+  @media screen and (#{$bp-larger-than-phablet}){
+    margin-top: 1rem;
   }
 
   li{

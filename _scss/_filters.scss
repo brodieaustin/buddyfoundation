@@ -1,0 +1,49 @@
+.filters{
+  h3{
+    font-size: 100%;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    @media (#{$bp-larger-than-desktop}) {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+
+  .button{
+    padding: 0 1rem;
+    background: $light-grey;
+    border: 0;
+    color: $primary-color;
+    margin-right: 1rem;
+    font-size: 100%;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .button.submit{
+    background: $secondary-color;
+  }
+
+  .button.reset{
+    color: $dark-grey;
+  }
+
+}
+
+.filter-controls{
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.filter-control{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.filter-meta{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $dark-grey;
+}

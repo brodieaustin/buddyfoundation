@@ -1,0 +1,16 @@
+.favorite{
+  display: inline-block;
+  padding: 0;
+  height: 3rem;
+  width: 3rem;
+  border: 0;
+  font-size: 3rem;
+  font-family: $secondary-font-family;
+  color: $primary-color;
+
+  &.not-favorited{
+    &:after{
+      content:'\2606';
+    }
+  }
+}

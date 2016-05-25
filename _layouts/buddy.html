@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<article class="page buddy detail">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <a href="{{ site.baseurl }}/buddies/" class="section-label">Buddies</a>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </div>
+        <div class="six columns">
+          <div class="page-extras">
+            <button class="favorite not-favorited"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
+</article>

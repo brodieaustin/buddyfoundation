@@ -1,0 +1,16 @@
+.tags{
+  @extend .unstyled-list;
+
+  li{
+    display: inline-block;
+    margin-right: .5rem;
+
+    a{
+      display: block;
+      padding: .375rem .5rem;
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+
+  }
+}

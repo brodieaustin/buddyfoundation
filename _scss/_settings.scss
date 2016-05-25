@@ -6,10 +6,13 @@ $dark-grey: #9797A4;
 $primary-color: #00274d; //navy
 $secondary-color: #d7e8f7; //light blue
 $accent-color: #d18316; //tan
-$border-color: $dark-grey;
+$border-color: lighten($dark-grey, 20%);
 $link-color: $primary-color;
 $font-color: #333;
 
 //fonts
 $base-font-family: 'Muli', sans-serif;
 $secondary-font-family: 'Helvetica', Arial, sans-serif;
+
+//skeleton overrides
+$global-radius: 0;

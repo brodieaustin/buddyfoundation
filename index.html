@@ -9,11 +9,13 @@ layout: base
   </video>-->
   <div class="container">
     <!--<img src="{{ site.baseurl }}/assets/img/collie2.jpg" alt="A collie, cat, and dog sitting.">-->
-    <h1>We are a caring, no-kill shelter dedicated to ending animal homelessness.</h1>
-    <a href="https://www.google.com/maps/place/65+W+Seegers+Rd,+Arlington+Heights,+IL+60005" class="location">
-      <svg viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g fill="#00274D" fill-rule="evenodd"><path d="M8 23.88l-.412-.596C7.279 22.836 0 12.25 0 8c0-4.41 3.59-8 8-8s8 3.59 8 8c0 4.25-7.28 14.835-7.588 15.284L8 23.88zM8 1C4.14 1 1 4.14 1 8c0 3.393 5.442 11.777 7 14.107C9.557 19.777 15 11.394 15 8c0-3.86-3.14-7-7-7z"/><path d="M8 11.5c-1.93 0-3.5-1.57-3.5-3.5S6.07 4.5 8 4.5s3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zm0-6C6.622 5.5 5.5 6.622 5.5 8c0 1.38 1.122 2.5 2.5 2.5 1.38 0 2.5-1.12 2.5-2.5 0-1.378-1.12-2.5-2.5-2.5z"/></g></svg>
-      65 W. Seegers Road, Arlington Heights, IL 60005
-    </a>
+    <div class="hero-text">
+      <h1>We are a caring, no-kill shelter dedicated to ending animal homelessness.</h1>
+      <a href="https://www.google.com/maps/place/65+W+Seegers+Rd,+Arlington+Heights,+IL+60005" class="location">
+        <svg viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g fill="#00274D" fill-rule="evenodd"><path d="M8 23.88l-.412-.596C7.279 22.836 0 12.25 0 8c0-4.41 3.59-8 8-8s8 3.59 8 8c0 4.25-7.28 14.835-7.588 15.284L8 23.88zM8 1C4.14 1 1 4.14 1 8c0 3.393 5.442 11.777 7 14.107C9.557 19.777 15 11.394 15 8c0-3.86-3.14-7-7-7z"/><path d="M8 11.5c-1.93 0-3.5-1.57-3.5-3.5S6.07 4.5 8 4.5s3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zm0-6C6.622 5.5 5.5 6.622 5.5 8c0 1.38 1.122 2.5 2.5 2.5 1.38 0 2.5-1.12 2.5-2.5 0-1.378-1.12-2.5-2.5-2.5z"/></g></svg>
+        65 W. Seegers Road, Arlington Heights, IL 60005
+      </a>
+    </div>
   </div>
 </section>
 
@@ -21,23 +23,29 @@ layout: base
   <div class="container">
     <h2>Find your new buddy</h2>
     <ul class="buddies">
-      <li>
-        <a href="#">
-          <img src="{{ site.baseurl }}/assets/img/buddies/buddy01.jpg" alt="A buddy">
-        </a>
+      <li class="buddy card nocaption">
+        <figure>
+          <a href="{{ site.baseurl }}/buddies/1/">
+            <img src="{{ site.baseurl }}/assets/img/buddies/buddy04.jpg" alt="A buddy">
+          </a>
+        </figure>
       </li>
-      <li>
-        <a href="#">
-          <img src="{{ site.baseurl }}/assets/img/buddies/buddy02.jpg" alt="A buddy">
-        </a>
+      <li class="buddy card nocaption">
+        <figure>
+          <a href="#">
+            <img src="{{ site.baseurl }}/assets/img/buddies/buddy02.jpg" alt="A buddy">
+          </a>
+        </figure>
       </li>
-      <li>
-        <a href="#">
-          <img src="{{ site.baseurl }}/assets/img/buddies/buddy03.jpg" alt="A buddy">
-        </a>
+      <li class="buddy card nocaption">
+        <figure>
+          <a href="#">
+            <img src="{{ site.baseurl }}/assets/img/buddies/buddy03.jpg" alt="A buddy">
+          </a>
+        </figure>
       </li>
     </ul>
-    <a href="#" class="button">See more buddies</a>
+    <a href="{{ site.baseurl }}/buddies/" class="button">See more buddies</a>
   </div>
 </section>
 
