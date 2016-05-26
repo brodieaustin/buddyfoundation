@@ -828,7 +828,7 @@ a {
 
 .site-footer {
   padding-bottom: 5rem;
-  background: #d7e8f7 url(/assets/img/cat-dog.jpg) no-repeat 80% bottom; }
+  background: #d7e8f7 url(/buddyfoundation/assets/img/cat-dog.jpg) no-repeat 80% bottom; }
   @media screen and (min-width: 750px) {
     .site-footer {
       text-align: left;
@@ -892,13 +892,13 @@ a {
 
 .hero {
   padding: 4rem 0;
-  background: #d7e8f7 url(/assets/img/collie3-mobile.jpg) no-repeat;
+  background: #d7e8f7 url(/buddyfoundation/assets/img/collie3-mobile.jpg) no-repeat;
   background-position: center top;
   overflow: hidden;
   position: relative; }
   @media (min-width: 750px) {
     .hero {
-      background: #d7e8f7 url(/assets/img/collie3.jpg) no-repeat;
+      background: #d7e8f7 url(/buddyfoundation/assets/img/collie3.jpg) no-repeat;
       background-position: 80% top; } }
   .hero .hero-text {
     position: relative;
@@ -1063,7 +1063,7 @@ a {
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  background: url(/assets/special-buddy.svg) no-repeat;
+  background: url(/buddyfoundation/assets/special-buddy.svg) no-repeat;
   vertical-align: middle; }
 
 .events {
