@@ -62,7 +62,14 @@
 .page-extras{
 
   .favorite{
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (#{$bp-larger-than-tablet}) {
+      position: static;
+      float: right;
+    }
   }
 
   .section-label{

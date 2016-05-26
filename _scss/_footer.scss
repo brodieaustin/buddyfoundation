@@ -52,11 +52,14 @@
 
 .newsletter{
   clear: both;
+  text-align: center;
 
   p{
     margin-bottom: .375rem;
   }
   a{
+    display: block;
+    margin-top: .5rem;
     text-decoration: underline;
     text-transform: uppercase;
   }

@@ -734,7 +734,7 @@ a {
   height: auto;
   padding: .355rem 1.5rem;
   background: transparent;
-  border: 2px solid #00274d;
+  border: 1px solid #00274d;
   -webkit-border-radius: 0;
           border-radius: 0;
   text-decoration: none;
@@ -795,7 +795,8 @@ a {
   top: 2rem;
   display: inline-block;
   float: right;
-  padding: .375rem .5rem;
+  height: auto;
+  padding: .375rem 1rem;
   color: #d7e8f7;
   background: #00274d;
   border-color: transparent;
@@ -860,10 +861,13 @@ a {
   font-style: italic; }
 
 .newsletter {
-  clear: both; }
+  clear: both;
+  text-align: center; }
   .newsletter p {
     margin-bottom: .375rem; }
   .newsletter a {
+    display: block;
+    margin-top: .5rem;
     text-decoration: underline;
     text-transform: uppercase; }
 
@@ -1003,7 +1007,13 @@ a {
     font-size: 1.5rem; }
 
 .page-extras .favorite {
-  float: right; }
+  position: absolute;
+  top: 0;
+  right: 0; }
+  @media (min-width: 750px) {
+    .page-extras .favorite {
+      position: static;
+      float: right; } }
 
 .page-extras .section-label {
   margin-top: 1rem; }
@@ -1051,7 +1061,7 @@ a {
     margin: .25rem 0 .25rem .5rem; }
 
 .buddy.detail .information {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .buddy.detail h1 {
   text-transform: none; }
@@ -1069,14 +1079,15 @@ a {
   .special-buddy .special-buddy-message {
     display: inline-block;
     width: 70%;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    line-height: 1.4; }
 
 .special-buddy-icon {
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
   background: url(../svg/special-buddy.svg) no-repeat;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .events {
   display: -webkit-box;
@@ -1176,8 +1187,24 @@ a {
   height: 3rem;
   width: 3rem;
   border: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Helvetica", Arial, sans-serif;
   color: #00274d; }
   .favorite.not-favorited:after {
     content: '\2606'; }
+
+.pager {
+  text-align: center; }
+
+.page-control {
+  margin: 1rem .5rem;
+  background: #00274d;
+  color: #fff;
+  border: 0; }
+  .page-control.disabled {
+    background: #f5f5f5;
+    color: #9797A4;
+    border: 0; }
+
+.page-range {
+  color: #9797A4; }

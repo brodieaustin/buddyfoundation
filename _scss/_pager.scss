@@ -1,0 +1,20 @@
+.pager{
+  text-align: center;
+}
+
+.page-control{
+  margin: 1rem .5rem;
+  background: $primary-color;
+  color: $white;
+  border: 0;
+
+  &.disabled{
+    background: $light-grey;
+    color: $dark-grey;
+    border: 0;
+  }
+}
+
+.page-range{
+  color: $dark-grey;
+}

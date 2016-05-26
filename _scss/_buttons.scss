@@ -3,7 +3,7 @@
   height: auto;
   padding: .355rem 1.5rem;
   background: transparent;
-  border: 2px solid $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 0;
   text-decoration: none;
   letter-spacing: 0;
@@ -24,4 +24,5 @@
   &:hover{
     opacity: .7;
   }
+
 }

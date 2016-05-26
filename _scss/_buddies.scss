@@ -59,7 +59,7 @@
 
   &.detail{
     .information{
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     h1{
@@ -85,6 +85,7 @@
     display: inline-block;
     width: 70%;
     margin-left: 1rem;
+    line-height: 1.4;
   }
 }
 
@@ -93,5 +94,5 @@
   height: 2.5rem;
   width: 2.5rem;
   background: url(../svg/special-buddy.svg) no-repeat;
-  vertical-align: top;
+  vertical-align: middle;
 }
