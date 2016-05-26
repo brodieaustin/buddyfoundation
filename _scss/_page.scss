@@ -22,12 +22,25 @@
 }
 
 .section-label{
-  display: inline-block;
+  display: block;
   margin-bottom: .125rem;
   font-size: .625rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $primary-color;
+}
+
+.section-nav{
+  @extend .unstyled-list;
+
+  li{
+    margin: .5rem 0;
+  }
+
+  a{
+    color: $primary-color;
+    text-decoration: underline;
+  }
 }
 
 .more{

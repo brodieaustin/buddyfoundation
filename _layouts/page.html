@@ -13,7 +13,12 @@ layout: base
         <div class="six columns">
           <div class="page-extras">
             {% if page.section_nav %}
-              {{ page.section_nav }}
+              <h4 class="section-label">In this section</h4>
+              <ul class="section-nav">
+                {% for p in page.section_nav %}
+                  <li><a href="{{ p|downcase }}">{{ p }}</a></li>
+                {% endfor %}
+              </ul>
             {% endif %}
           </div>
         </div>

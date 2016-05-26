@@ -706,7 +706,7 @@ a {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px); }
 
-.unstyled-list, .nav, .hours, .social, .buddies, .events, .tags {
+.unstyled-list, .nav, .hours, .social, .section-nav, .buddies, .events, .tags {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -976,12 +976,19 @@ a {
   padding: 3rem 0; }
 
 .section-label {
-  display: inline-block;
+  display: block;
   margin-bottom: .125rem;
   font-size: .625rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #00274d; }
+
+.section-nav li {
+  margin: .5rem 0; }
+
+.section-nav a {
+  color: #00274d;
+  text-decoration: underline; }
 
 .more {
   max-width: 80%;
