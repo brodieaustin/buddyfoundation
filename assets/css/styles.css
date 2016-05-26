@@ -1005,6 +1005,9 @@ a {
 .page-extras .favorite {
   float: right; }
 
+.page-extras .section-label {
+  margin-top: 1rem; }
+
 .buddies {
   display: -webkit-box;
   display: -webkit-flex;
