@@ -711,14 +711,14 @@ a {
   margin: 0;
   padding: 0; }
 
-.flex-video {
+.embed {
   position: relative;
   padding-top: 1.5625rem;
   padding-bottom: 67.5%;
   height: 0;
   margin-bottom: 1rem;
   overflow: hidden; }
-  .flex-video iframe {
+  .embed iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -738,12 +738,12 @@ a {
   -webkit-border-radius: 0;
           border-radius: 0;
   text-decoration: none;
-  letter-spacing: 0;
+  letter-spacing: .5px;
   text-transform: uppercase;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
   color: #00274d;
-  font-size: 100%; }
+  font-size: .875rem; }
   .button.more {
     display: block;
     width: 40%;
@@ -880,11 +880,15 @@ a {
     display: inline-block;
     margin-right: 1rem; }
     .social li a {
-      display: block; }
+      display: block;
+      height: 3rem;
+      width: 3rem;
+      padding: 0;
+      background-color: #00274d;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
   .social svg {
-    height: 3rem;
-    width: 3rem;
-    fill: #00274d; }
+    fill: #fff; }
 
 .homepage-section, .featured-buddies, .upcoming-events, .help {
   padding: 2rem 0;
@@ -988,7 +992,8 @@ a {
   color: #00274d; }
 
 .section-nav li {
-  margin: .5rem 0; }
+  display: inline-block;
+  margin: .5rem .5rem .5rem 0; }
 
 .section-nav a {
   color: #00274d;
@@ -1006,17 +1011,25 @@ a {
     margin-bottom: 1rem;
     font-size: 1.5rem; }
 
-.page-extras .favorite {
-  position: absolute;
-  top: 0;
-  right: 0; }
-  @media (min-width: 750px) {
-    .page-extras .favorite {
-      position: static;
-      float: right; } }
-
-.page-extras .section-label {
-  margin-top: 1rem; }
+.page-extras {
+  overflow: hidden; }
+  .page-extras .favorite {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (min-width: 550px) {
+      .page-extras .favorite {
+        position: static;
+        float: right; } }
+  .page-extras .share-buttons {
+    margin-top: .5rem;
+    clear: right; }
+    @media (min-width: 550px) {
+      .page-extras .share-buttons {
+        float: right;
+        margin-top: 0; } }
+  .page-extras .section-label {
+    margin-top: 1rem; }
 
 .buddies {
   display: -webkit-box;
@@ -1080,7 +1093,8 @@ a {
     display: inline-block;
     width: 70%;
     margin-left: 1rem;
-    line-height: 1.4; }
+    line-height: 1.4;
+    vertical-align: middle; }
 
 .special-buddy-icon {
   display: inline-block;
@@ -1208,3 +1222,11 @@ a {
 
 .page-range {
   color: #9797A4; }
+
+.share {
+  padding: .125rem;
+  border: 0; }
+  .share svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #9797A4; }

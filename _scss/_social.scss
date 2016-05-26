@@ -12,12 +12,15 @@
 
     a{
       display: block;
+      height: 3rem;
+      width: 3rem;
+      padding: 0;
+      background-color: $primary-color;
+      border-radius: 50%;
     }
   }
 
   svg{
-    height: 3rem;
-    width: 3rem;
-    fill: $primary-color;
+    fill: $white;
   }
 }

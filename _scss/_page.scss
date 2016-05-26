@@ -34,7 +34,8 @@
   @extend .unstyled-list;
 
   li{
-    margin: .5rem 0;
+    display: inline-block;
+    margin: .5rem .5rem .5rem 0;
   }
 
   a{
@@ -60,15 +61,26 @@
 }
 
 .page-extras{
+  overflow: hidden;
 
   .favorite{
     position: absolute;
     top: 0;
     right: 0;
 
-    @media (#{$bp-larger-than-tablet}) {
+    @media (#{$bp-larger-than-phablet}) {
       position: static;
       float: right;
+    }
+  }
+
+  .share-buttons{
+    margin-top: .5rem;
+    clear: right;
+
+    @media (#{$bp-larger-than-phablet}) {
+      float: right;
+      margin-top: 0;
     }
   }
 

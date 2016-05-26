@@ -6,11 +6,11 @@
   border: 1px solid $primary-color;
   border-radius: 0;
   text-decoration: none;
-  letter-spacing: 0;
+  letter-spacing: .5px;
   text-transform: uppercase;
   transition: opacity .2s ease;
   color: $primary-color;
-  font-size: 100%;
+  font-size: .875rem;
 
   &.more{
     display: block;
