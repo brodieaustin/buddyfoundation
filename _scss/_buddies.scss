@@ -51,7 +51,7 @@
       display: block;
     }
 
-    .special-buddy{
+    .special-buddy-icon{
       float: right;
       margin: .25rem 0 .25rem .5rem;
     }
@@ -67,37 +67,31 @@
     }
 
     .featured-image{
-      margin: 0;
+      margin: 0 0 1rem;
+
+      @media (#{$bp-larger-than-tablet}) {
+        margin: 0;
+      }
     }
   }
 }
 
-.special-buddy-legend{
-  margin-bottom: .75rem;
-  font-style: italic;
-  font-size: .875rem;
-  line-height: 1.1;
-
-  .special-buddy{
-    margin-right: .5rem;
-  }
-}
-
-.special-buddy-message{
-  margin-bottom: .75rem;
-  font-style: italic;
-  font-size: .875rem;
-
-  .special-buddy{
-    float: left;
-    margin-right: 1rem;
-  }
-}
-
 .special-buddy{
+  margin-bottom: .75rem;
+  font-style: italic;
+  font-size: .875rem;
+
+  .special-buddy-message{
+    display: inline-block;
+    width: 70%;
+    margin-left: 1rem;
+  }
+}
+
+.special-buddy-icon{
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  background: url(/buddyfoundation/assets/special-buddy.svg) no-repeat;
-  vertical-align: middle;
+  background: url(../svg/special-buddy.svg) no-repeat;
+  vertical-align: top;
 }

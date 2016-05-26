@@ -39,6 +39,10 @@
 .filter-control{
   display: inline-block;
   margin-right: 1rem;
+
+  select{
+    margin-bottom: .75rem;
+  }
 }
 
 .filter-meta{

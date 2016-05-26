@@ -31,10 +31,14 @@
 }
 
 .more{
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
   padding: 2rem 0 0;
   text-align: center;
+
+  @media (#{$bp-larger-than-tablet}) {
+    max-width: 60%;
+  }
 
   h2{
     margin-bottom: 1rem;
@@ -47,5 +51,5 @@
   .favorite{
     float: right;
   }
-  
+
 }

@@ -828,7 +828,7 @@ a {
 
 .site-footer {
   padding-bottom: 5rem;
-  background: #d7e8f7 url(/buddyfoundation/assets/img/cat-dog.jpg) no-repeat 80% bottom; }
+  background: #d7e8f7 url(../img/cat-dog.jpg) no-repeat 80% bottom; }
   @media screen and (min-width: 750px) {
     .site-footer {
       text-align: left;
@@ -892,14 +892,17 @@ a {
 
 .hero {
   padding: 4rem 0;
-  background: #d7e8f7 url(/buddyfoundation/assets/img/collie3-mobile.jpg) no-repeat;
+  background: #d7e8f7 url(../img/collie3-mobile.jpg) no-repeat;
   background-position: center top;
   overflow: hidden;
   position: relative; }
   @media (min-width: 750px) {
     .hero {
-      background: #d7e8f7 url(/buddyfoundation/assets/img/collie3.jpg) no-repeat;
-      background-position: 80% top; } }
+      background: #d7e8f7 url(../img/collie3.jpg) no-repeat;
+      background-position: right top; } }
+  @media (min-width: 1000px) {
+    .hero {
+      background-position: 85% top; } }
   .hero .hero-text {
     position: relative;
     z-index: 500; }
@@ -981,10 +984,13 @@ a {
   color: #00274d; }
 
 .more {
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
   padding: 2rem 0 0;
   text-align: center; }
+  @media (min-width: 750px) {
+    .more {
+      max-width: 60%; } }
   .more h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem; }
@@ -1030,7 +1036,7 @@ a {
       color: #9797A4; }
   .buddy.card a {
     display: block; }
-  .buddy.card .special-buddy {
+  .buddy.card .special-buddy-icon {
     float: right;
     margin: .25rem 0 .25rem .5rem; }
 
@@ -1041,30 +1047,26 @@ a {
   text-transform: none; }
 
 .buddy.detail .featured-image {
-  margin: 0; }
+  margin: 0 0 1rem; }
+  @media (min-width: 750px) {
+    .buddy.detail .featured-image {
+      margin: 0; } }
 
-.special-buddy-legend {
-  margin-bottom: .75rem;
-  font-style: italic;
-  font-size: .875rem;
-  line-height: 1.1; }
-  .special-buddy-legend .special-buddy {
-    margin-right: .5rem; }
-
-.special-buddy-message {
+.special-buddy {
   margin-bottom: .75rem;
   font-style: italic;
   font-size: .875rem; }
-  .special-buddy-message .special-buddy {
-    float: left;
-    margin-right: 1rem; }
+  .special-buddy .special-buddy-message {
+    display: inline-block;
+    width: 70%;
+    margin-left: 1rem; }
 
-.special-buddy {
+.special-buddy-icon {
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  background: url(/buddyfoundation/assets/special-buddy.svg) no-repeat;
-  vertical-align: middle; }
+  background: url(../svg/special-buddy.svg) no-repeat;
+  vertical-align: top; }
 
 .events {
   display: -webkit-box;
@@ -1138,6 +1140,8 @@ a {
 .filter-control {
   display: inline-block;
   margin-right: 1rem; }
+  .filter-control select {
+    margin-bottom: .75rem; }
 
 .filter-meta {
   position: absolute;
@@ -1145,14 +1149,16 @@ a {
   right: 0;
   color: #9797A4; }
 
-.tags li {
-  display: inline-block;
-  margin-right: .5rem; }
-  .tags li a {
-    display: block;
-    padding: .375rem .5rem;
-    background-color: #d7e8f7;
-    color: #00274d; }
+.tags {
+  margin-bottom: 1rem; }
+  .tags li {
+    display: inline-block;
+    margin-right: .5rem; }
+    .tags li a {
+      display: block;
+      padding: .375rem .5rem;
+      background-color: #d7e8f7;
+      color: #00274d; }
 
 .favorite {
   display: inline-block;

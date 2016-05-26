@@ -17,14 +17,18 @@
 
 .hero{
   padding: 4rem 0;
-  background: $secondary-color url(/buddyfoundation/assets/img/collie3-mobile.jpg) no-repeat;
+  background: $secondary-color url(../img/collie3-mobile.jpg) no-repeat;
   background-position: center top;
   overflow: hidden;
   position: relative;
 
   @media (#{$bp-larger-than-tablet}) {
-    background: $secondary-color url(/buddyfoundation/assets/img/collie3.jpg) no-repeat;
-    background-position: 80% top;
+    background: $secondary-color url(../img/collie3.jpg) no-repeat;
+    background-position: right top;
+  }
+
+  @media (#{$bp-larger-than-desktop}) {
+    background-position: 85% top;
   }
 
   .hero-text{
