@@ -1,0 +1,27 @@
+.gallery-images{
+  @extend .unstyled-list;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (#{$bp-larger-than-phablet}) {
+    margin-left: -2rem;
+  }
+
+  li{
+    margin: 0 auto 2rem;
+
+    @media (#{$bp-larger-than-phablet}){
+      width: calc(50% - 2rem);
+    }
+
+    @media (#{$bp-larger-than-tablet}) {
+      width: calc(25% - 2rem);
+      margin-left: 2rem;
+    }
+  }
+
+  img{
+    @extend .responsive-img;
+  }
+
+}

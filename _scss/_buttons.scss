@@ -5,7 +5,7 @@
   background: transparent;
   border: 1px solid $primary-color;
   border-radius: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   letter-spacing: .5px;
   text-transform: uppercase;
   transition: opacity .2s ease;

@@ -1,8 +1,10 @@
 .site-footer{
-  padding-bottom: 5rem;
-  background: $secondary-color url(../img/cat-dog.jpg) no-repeat 80% bottom;
+  padding-bottom: 6rem;
+  background: $secondary-color url(../img/cat-dog.jpg) no-repeat;
+  background-position: 10% bottom;
 
   @media screen and (#{$bp-larger-than-tablet}){
+    background-position: 80% bottom;
     text-align: left;
     padding-bottom: 0;
   }
