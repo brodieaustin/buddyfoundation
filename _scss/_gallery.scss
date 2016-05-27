@@ -15,7 +15,7 @@
     }
 
     @media (#{$bp-larger-than-tablet}) {
-      width: calc(25% - 2rem);
+      width: calc(33.333% - 2rem);
       margin-left: 2rem;
     }
   }

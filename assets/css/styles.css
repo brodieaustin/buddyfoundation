@@ -668,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .125rem;
   font-weight: 400;
   font-family: "Muli", sans-serif;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #00274d;
   letter-spacing: 0; }
 
@@ -1292,6 +1292,6 @@ a {
         width: calc(50% - 2rem); } }
     @media (min-width: 750px) {
       .gallery-images li {
-        width: -webkit-calc(25% - 2rem);
-        width: calc(25% - 2rem);
+        width: -webkit-calc(33.333% - 2rem);
+        width: calc(33.333% - 2rem);
         margin-left: 2rem; } }
