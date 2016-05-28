@@ -1078,7 +1078,8 @@ a {
       font-style: italic;
       color: #9797A4; }
   .buddy.card a {
-    display: block; }
+    display: block;
+    text-decoration: none; }
   .buddy.card .special-buddy-icon {
     float: right;
     margin: .25rem 0 .25rem .5rem; }
@@ -1205,12 +1206,19 @@ a {
   color: #9797A4; }
 
 .filter-controls {
-  display: inline-block;
-  margin-bottom: .5rem; }
+  margin-bottom: 1rem; }
+  @media (min-width: 750px) {
+    .filter-controls {
+      display: inline-block; } }
 
 .filter-control {
-  display: inline-block;
-  margin-right: 1rem; }
+  display: block; }
+  @media (min-width: 750px) {
+    .filter-control {
+      display: inline-block;
+      margin-right: 1rem; } }
+  .filter-control > * {
+    width: 100%; }
   .filter-control select {
     margin-bottom: .75rem; }
 
