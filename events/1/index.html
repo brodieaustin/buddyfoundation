@@ -24,6 +24,8 @@ description: 'Bring the Family….free to view the cars and motorcycles!'
   </div>
 </section>
 
+<fb:login-button scope="public_profile,email" data-size="large" onlogin="checkLoginState();">  </fb:login-button>
+
 <section class="more">
   <h2>Missed the event? Here’s what happened&hellip;</h2>
   <div class="social-gallery">
@@ -46,3 +48,148 @@ description: 'Bring the Family….free to view the cars and motorcycles!'
     </ul>
   </div>
 </section>
+
+<script>
+
+  var httpRequest;
+
+  function statusChangeCallback(response) {
+    var login_div = document.getElementsByClassName('login')[0];
+
+    if (response.status === 'connected') {
+      getAlbum();
+
+      login_div.classList.remove('logged-out');
+      login_div.classList.add('logged-in');
+
+    } else if (response.status === 'not_authorized') {
+      login_div.classList.remove('logged-in');
+      login_div.classList.add('logged-out');
+
+    } else {
+      login_div.classList.remove('logged-in');
+      login_div.classList.add('logged-out');
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '958887964229813',
+    cookie     : true,  // enable cookies to allow the server to access
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+    FB.getLoginStatus(function(response) {
+      console.log(response)
+      statusChangeCallback(response);
+    });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function getAlbum(){
+    FB.api(
+    "/1027684877254946/photos/",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+        var album = response.data;
+        parseAlbum(album);
+      }
+    });
+  }
+
+  function parseAlbum(album){
+    console.log(album)
+
+    for (i = 0; i < album.length; i++){
+      var photo = album[i];
+      var photo_id = album[i].id;
+      getPhoto(photo_id)
+    }
+  }
+
+  function getPhoto(photo_id){
+    console.log(photo_id)
+    FB.api(
+    "/" + photo_id,
+      {
+        fields: 'images',
+      },
+      function (response) {
+        if (response && !response.error) {
+          console.log(response)
+          /*var link, heading, a, a_link, description, count, shared, shared_date, list_item;
+
+          link = response.og_object;
+
+          list_item = document.createElement('li');
+
+          a = document.createElement('a');
+          a.href = response.id;
+
+          if (link.title !== undefined){
+            a.innerText = link.title;
+          }
+          else{
+            a.innerText = link.url;
+          }
+
+          heading = document.createElement('h2');
+          heading.appendChild(a);
+          list_item.appendChild(heading)
+
+          shared = document.createElement('p');
+          shared.classList.add('shared');
+          shared_date = new Date(status.updated_time);
+          shared.innerHTML = (shared_date.getMonth() + 1) + "/" + shared_date.getDate() + "/" + shared_date.getFullYear();
+
+          shared.innerHTML = shared.innerHTML + ' | ' + response.share.share_count + ' shares | ';
+
+          a_link = document.createElement('a');
+          a_link.classList.add('url')
+          a_link.href = response.id;
+          a_link.innerText = 'link';
+          shared.appendChild(a_link);
+
+          list_item.appendChild(shared);
+
+          console.log(link.description)
+
+          if (link.description !== undefined){
+            description = document.createElement('p');
+            description.classList.add('description');
+            description.innerText = link.description;
+            list_item.appendChild(description)
+          }
+
+          var status_id = status.id;
+
+          description.innerText = description.innerText + '\n' + status_id.replace('125544447518384_', '');
+          list_item.appendChild(description)
+
+          list.appendChild(list_item);*/
+        }
+      }
+    );
+  }
+
+
+
+</script>
