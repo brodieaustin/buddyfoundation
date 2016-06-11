@@ -19,6 +19,7 @@
 
 .content{
   padding: 3rem 0;
+  overflow-x: hidden;
 
   h2{
     margin-bottom: 1rem;
@@ -144,4 +145,10 @@
     margin-top: 1rem;
   }
 
+}
+
+.page-action{
+  @media (#{$bp-larger-than-phablet}) {
+    text-align: center;
+  }
 }
