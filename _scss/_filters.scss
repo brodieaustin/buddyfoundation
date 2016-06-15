@@ -15,24 +15,30 @@
     background: $light-grey;
     border: 0;
     color: $primary-color;
-    margin-right: 1rem;
+    margin-right: .75rem;
     font-size: 100%;
     letter-spacing: 0;
     text-transform: none;
-  }
 
-  .button.submit{
-    background: $secondary-color;
-  }
+    &.submit{
+      background: $secondary-color;
+    }
 
-  .button.reset{
-    color: $dark-grey;
+    &.reset{
+      color: $dark-grey;
+    }
+
+    &.active{
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
   }
 
 }
 
 .filter-controls{
   margin-bottom: 1rem;
+  margin-left: 2rem;
 
   @media (#{$bp-larger-than-tablet}) {
     display: inline-block;
@@ -44,7 +50,7 @@
 
   @media (#{$bp-larger-than-tablet}) {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: .75rem;
   }
 
   > *{

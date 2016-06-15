@@ -1,20 +1,7 @@
 <div class="filters">
-  <h3>Find</h3>
+  <a href="#" class="button">Cats</a>
+  <a href="#" class="button">Dogs</a>
   <form class="filter-controls">
-    <div class="filter-control">
-      <label class="hidden">Type</label>
-      <select>
-        <option>Cat</option>
-        <option>Dog</option>
-      </select>
-    </div>
-    <div class="filter-control">
-      <label class="hidden">Breed</label>
-      <select>
-        <option>Breed 1</option>
-        <option>Breed 2</option>
-      </select>
-    </div>
     <div class="filter-control">
       <label class="hidden">Age</label>
       <select>
@@ -30,7 +17,7 @@
       </select>
     </div>
     <button type="submit" class="button submit">Find</button>
-    <a href="#" class="button reset">Reset</a>
+    <a href="{{ site.baseurl }}/buddies/" class="button reset">Reset</a>
   </form>
   <div class="filter-meta">
     <p><span class="results-count">90 Results</span> | <span class="page-range">Page 1 of 10</span></p>

@@ -6,12 +6,7 @@ section_nav: ['Cats', 'Dogs']
 ---
 
 {% include filters.html %}
-<div class="legend">
-  <p class="special-buddy">
-    <span class="special-buddy-icon"></span>
-    <span class="special-buddy-message">A special buddy who might require more love and care.</span>
-  </p>
-</div>
+
 <ul class="buddies">
   <li class="buddy card caption">
     <figure>
@@ -115,7 +110,47 @@ section_nav: ['Cats', 'Dogs']
       </a>
     </figure>
   </li>
+  <li class="buddy card caption">
+    <figure>
+      <a href="{{ site.baseurl }}/buddies/1/">
+        <img src="{{ site.baseurl }}/assets/img/buddies/rocky.jpg" alt="A buddy">
+        <figcaption>
+          <span class="special-buddy-icon"></span>
+          <h2>Rocky</h2>
+          <p>A simple description.</p>
+        </figcaption>
+      </a>
+    </figure>
+  </li>
+  <li class="buddy card caption">
+    <figure>
+      <a href="#">
+        <img src="{{ site.baseurl }}/assets/img/buddies/arthur.jpg" alt="A buddy">
+        <figcaption>
+          <h2>Arthur</h2>
+          <p>A simple description.</p>
+        </figcaption>
+      </a>
+    </figure>
+  </li>
+  <li class="buddy card caption">
+    <figure>
+      <a href="#">
+        <img src="{{ site.baseurl }}/assets/img/buddies/peachtree.jpg" alt="A buddy">
+        <figcaption>
+          <h2>Peach Tree</h2>
+          <p>A simple description.</p>
+        </figcaption>
+      </a>
+    </figure>
+  </li>
 </ul>
+<div class="legend">
+  <p class="special-buddy">
+    <span class="special-buddy-icon"></span>
+    <span class="special-buddy-message">A special buddy who might require more love and care.</span>
+  </p>
+</div>
 <div class="pager">
   <a href="#" class="button page-control prev disabled">Prev</a>
   <a href="#" class="button page-control next">Next</a>

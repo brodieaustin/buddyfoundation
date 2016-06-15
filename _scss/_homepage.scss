@@ -17,18 +17,15 @@
 
 .hero{
   padding: 4rem 0;
-  background: $secondary-color url(../img/collie3-mobile.jpg) no-repeat;
-  background-position: center top;
-  overflow: hidden;
+  background-color: $secondary-color;
+  background-image: url(../img/collie5-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
   position: relative;
 
   @media (#{$bp-larger-than-tablet}) {
-    background: $secondary-color url(../img/collie3.jpg) no-repeat;
-    background-position: right top;
-  }
-
-  @media (#{$bp-larger-than-desktop}) {
-    background-position: 85% top;
+    background-image: url(../img/collie5.jpg);
+    background-position: 70% center;
   }
 
   .hero-text{
@@ -71,16 +68,18 @@
     }
   }
 
-  img{
-    max-width: 100%;
-    height: auto;
-    display: none;
+  .hero-image{
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    margin: 0;
 
-    @media (#{$bp-larger-than-desktop}) {
+    figcaption{
       position: absolute;
-      top: -2.5rem;
-      right: 0;
-      z-index: 100;
+      top: 2rem;
+      right: 1rem;
+      width: 45%;
+      font-size: .75rem;
     }
   }
 

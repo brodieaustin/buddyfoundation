@@ -4,6 +4,7 @@
   @extend .unstyled-list;
   display: flex;
   flex-wrap: wrap;
+  clear: both;
 
   @media (#{$bp-larger-than-phablet}) {
     margin-left: -2rem;
@@ -24,7 +25,7 @@
     }
 
     @media (#{$bp-larger-than-tablet}) {
-      width: calc(33.3333% - 2rem);
+      width: calc(25% - 2rem);
       margin-left: 2rem;
     }
 

@@ -11,6 +11,8 @@
   li{
     width: 100%;
     margin-bottom: 1rem;
+    background: $secondary-color;
+    flex: 1;
 
 
     @media (#{$bp-larger-than-tablet}) {
@@ -20,15 +22,15 @@
     }
 
     @media (#{$bp-larger-than-desktop}) {
-      width: calc(25% - 2rem);
+      width: calc(33.3333% - 2rem);
       margin-left: 2rem;
       margin-bottom: 0;
     }
 
     a{
       display: block;
+      height: 100%;
       padding: 1rem;
-      background: $secondary-color;
       text-align: left;
       color: $primary-color;
       text-decoration: none;
