@@ -12,13 +12,13 @@
     width: 100%;
     margin-bottom: 1rem;
     background: $secondary-color;
-    flex: 1;
-
 
     @media (#{$bp-larger-than-tablet}) {
       width: calc(50% - 2rem);
       margin-left: 2rem;
       margin-bottom: 2rem;
+      flex: 1;
+
     }
 
     @media (#{$bp-larger-than-desktop}) {

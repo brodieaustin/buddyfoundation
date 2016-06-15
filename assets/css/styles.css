@@ -1082,17 +1082,16 @@ a {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-left: -1rem;
   clear: both; }
-  @media (min-width: 550px) {
+  @media (min-width: 750px) {
     .buddies {
       margin-left: -2rem; } }
 
 .buddy.card {
-  margin: 0 auto 2rem; }
-  @media (min-width: 550px) {
-    .buddy.card {
-      width: -webkit-calc(50% - 2rem);
-      width: calc(50% - 2rem); } }
+  width: -webkit-calc(50% - 1rem);
+  width: calc(50% - 1rem);
+  margin: 0 0 1rem 1rem; }
   @media (min-width: 750px) {
     .buddy.card {
       width: -webkit-calc(25% - 2rem);
@@ -1172,17 +1171,17 @@ a {
   .events li {
     width: 100%;
     margin-bottom: 1rem;
-    background: #d7e8f7;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+    background: #d7e8f7; }
     @media (min-width: 750px) {
       .events li {
         width: -webkit-calc(50% - 2rem);
         width: calc(50% - 2rem);
         margin-left: 2rem;
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1; } }
     @media (min-width: 1000px) {
       .events li {
         width: -webkit-calc(33.3333% - 2rem);
@@ -1256,11 +1255,11 @@ a {
     color: #d7e8f7; }
 
 .filter-controls {
-  margin-bottom: 1rem;
-  margin-left: 2rem; }
+  margin-bottom: 1rem; }
   @media (min-width: 750px) {
     .filter-controls {
-      display: inline-block; } }
+      display: inline-block;
+      margin-left: 2rem; } }
 
 .filter-control {
   display: block; }
@@ -1274,10 +1273,13 @@ a {
     margin-bottom: .75rem; }
 
 .filter-meta {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-top: -1rem;
   color: #9797A4; }
+  @media (min-width: 1000px) {
+    .filter-meta {
+      position: absolute;
+      top: 1rem;
+      right: 0; } }
 
 .tags {
   margin-bottom: 1rem; }

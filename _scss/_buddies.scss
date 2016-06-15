@@ -4,9 +4,10 @@
   @extend .unstyled-list;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -1rem;
   clear: both;
 
-  @media (#{$bp-larger-than-phablet}) {
+  @media (#{$bp-larger-than-tablet}) {
     margin-left: -2rem;
   }
 }
@@ -18,11 +19,8 @@
   }
 
   &.card{
-    margin: 0 auto 2rem;
-
-    @media (#{$bp-larger-than-phablet}){
-      width: calc(50% - 2rem);
-    }
+    width: calc(50% - 1rem);
+    margin: 0 0 1rem 1rem;
 
     @media (#{$bp-larger-than-tablet}) {
       width: calc(25% - 2rem);

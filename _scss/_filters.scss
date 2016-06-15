@@ -38,10 +38,10 @@
 
 .filter-controls{
   margin-bottom: 1rem;
-  margin-left: 2rem;
 
   @media (#{$bp-larger-than-tablet}) {
     display: inline-block;
+    margin-left: 2rem;
   }
 }
 
@@ -63,8 +63,12 @@
 }
 
 .filter-meta{
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-top: -1rem;
   color: $dark-grey;
+
+  @media (#{$bp-larger-than-desktop}) {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+  }
 }
