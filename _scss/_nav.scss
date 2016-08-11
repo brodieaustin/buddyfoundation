@@ -1,5 +1,5 @@
 .site-nav{
-  margin-top: 4.375rem;
+  margin-top: 3.125rem;
   display: none;
 
   @media screen and (#{$bp-larger-than-tablet}){
@@ -20,8 +20,9 @@
     margin-left: 1rem;
     color: $font-color;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     color: $secondary-color;
+    font-family: $secondary-font-family;
 
     @media screen and (#{$bp-larger-than-desktop}){
       margin-left: 3rem;

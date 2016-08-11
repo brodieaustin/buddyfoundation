@@ -21,10 +21,10 @@ body{
 h1, h2, h3, h4, h5, h6{
   margin-bottom: .125rem;
   font-weight: 400;
-  font-family: $base-font-family;
-  line-height: 1.2;
+  font-family: $secondary-font-family;
+  line-height: 1.4;
   color: $primary-color;
-  letter-spacing: 0;
+  letter-spacing: -1px;
 }
 
 h1{

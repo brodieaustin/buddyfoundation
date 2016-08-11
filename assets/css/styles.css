@@ -661,16 +661,16 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font: 400 16px/1.6 "Lato", sans-serif;
+  font: 400 16px/1.6 "Open Sans", sans-serif;
   color: #00274d; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .125rem;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
-  line-height: 1.2;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.4;
   color: #00274d;
-  letter-spacing: 0; }
+  letter-spacing: -1px; }
 
 h1 {
   font-size: 2.25rem; }
@@ -725,7 +725,7 @@ a {
     width: 100%;
     height: 100%; }
 
-.responsive-img, .homepage-section img, .featured-buddies img, .upcoming-events img, .help img, .buddy img, .event.detail img, .gallery-images img {
+.responsive-img, .homepage-section img, .featured-buddies img, .upcoming-events img, .help img, .building img, .buddy img, .event.detail img, .gallery-images img {
   max-width: 100%;
   height: auto; }
 
@@ -764,15 +764,15 @@ a {
     position: relative;
     bottom: -.5rem;
     display: inline-block;
-    width: 7rem;
+    width: 6rem;
     height: auto; }
     @media (min-width: 750px) {
       .site-header .brand {
-        width: 9.25rem;
+        width: 7rem;
         height: auto; } }
 
 .site-nav {
-  margin-top: 4.375rem;
+  margin-top: 3.125rem;
   display: none; }
   @media screen and (min-width: 750px) {
     .site-nav {
@@ -787,8 +787,9 @@ a {
   margin-left: 1rem;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: .5px;
-  color: #d7e8f7; }
+  letter-spacing: 1px;
+  color: #d7e8f7;
+  font-family: "Work Sans", sans-serif; }
   @media screen and (min-width: 1000px) {
     .nav a {
       margin-left: 3rem; } }
@@ -803,7 +804,7 @@ a {
   color: #d7e8f7;
   background: #00274d;
   border-color: transparent;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.5rem; }
   @media screen and (min-width: 750px) {
     .mobile-nav-control {
@@ -826,17 +827,15 @@ a {
     margin: 0;
     color: #d7e8f7;
     text-transform: uppercase;
-    font-family: "Helvetica", Arial, sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: .875rem;
     letter-spacing: 1.5px; }
 
 .site-footer {
   padding-bottom: 6rem;
-  background: #d7e8f7 url(../img/cat-dog.jpg) no-repeat;
-  background-position: 10% bottom; }
+  background: #d7e8f7; }
   @media screen and (min-width: 750px) {
     .site-footer {
-      background-position: 80% bottom;
       text-align: left;
       padding-bottom: 0; } }
   .site-footer a {
@@ -847,8 +846,6 @@ a {
     padding: 2rem 0;
     background: #00274d;
     color: #d7e8f7; }
-    .site-footer .engage a {
-      color: #d18316; }
   .site-footer .brand {
     display: block;
     color: #00274d;
@@ -869,12 +866,16 @@ a {
   clear: both;
   text-align: center; }
   .newsletter p {
-    margin-bottom: .375rem; }
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    color: #d7e8f7;
+    text-transform: none; }
   .newsletter a {
     display: block;
-    margin-top: .5rem;
-    text-decoration: underline;
-    text-transform: uppercase; }
+    margin-top: .375rem;
+    font-size: 1rem;
+    color: #d18316;
+    text-decoration: underline; }
 
 .social {
   margin-top: 2rem; }
@@ -895,25 +896,46 @@ a {
   .social svg {
     fill: #d7e8f7; }
 
-.homepage-section, .featured-buddies, .upcoming-events, .help {
+.homepage-section, .featured-buddies, .upcoming-events, .help, .building {
   padding: 2rem 0;
   text-align: center; }
-  .homepage-section h2, .featured-buddies h2, .upcoming-events h2, .help h2 {
-    margin-bottom: 1.5rem; }
-  .homepage-section .button, .featured-buddies .button, .upcoming-events .button, .help .button {
+  .homepage-section:last-child, .featured-buddies:last-child, .upcoming-events:last-child, .help:last-child, .building:last-child {
+    padding-bottom: 4rem; }
+  .homepage-section h2, .featured-buddies h2, .upcoming-events h2, .help h2, .building h2 {
+    margin: 0 auto 1.5rem; }
+    @media (min-width: 750px) {
+      .homepage-section h2, .featured-buddies h2, .upcoming-events h2, .help h2, .building h2 {
+        max-width: 60%; } }
+  .homepage-section .button, .featured-buddies .button, .upcoming-events .button, .help .button, .building .button {
     margin-bottom: 0; }
 
 .hero {
-  padding: 4rem 0;
-  background-color: #d7e8f7;
-  background-image: url(../img/collie5-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
+  padding: 8rem 0;
   position: relative; }
-  @media (min-width: 750px) {
-    .hero {
-      background-image: url(../img/collie5.jpg);
-      background-position: 70% center; } }
+  .hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 30rem;
+    background-color: #d7e8f7;
+    background-image: url(../img/collie6-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    -webkit-filter: opacity(0.4);
+            filter: opacity(0.4); }
+    @media (min-width: 750px) {
+      .hero:before {
+        background-image: url(../img/collie6.jpg);
+        height: 30.125rem; } }
+    @media (min-width: 1000px) {
+      .hero:before {
+        background-position: left top;
+        -webkit-filter: opacity(1);
+                filter: opacity(1); } }
   .hero .hero-text {
     position: relative;
     z-index: 500; }
@@ -921,51 +943,37 @@ a {
       .hero .hero-text {
         max-width: 35rem; } }
   .hero h1 {
-    font-size: 2rem; }
+    font-size: 2.25rem;
+    letter-spacing: -1px; }
     @media (min-width: 750px) {
       .hero h1 {
-        font-size: 2.25rem; } }
-  .hero video {
+        font-size: 2.5rem; } }
+  .hero .meet-buddy {
     position: absolute;
-    top: 0;
-    left: -12rem;
-    height: 100%;
-    -webkit-filter: brightness(0.9);
-    filter: brightness(0.9); }
-    @media (min-width: 400px) {
-      .hero video {
-        left: -6rem; } }
-    @media (min-width: 750px) {
-      .hero video {
-        left: 0;
-        height: auto;
-        width: 100%; } }
-    @media (min-width: 1000px) {
-      .hero video {
-        top: -6rem; } }
-  .hero .hero-image {
-    position: absolute;
+    bottom: -10rem;
     right: 0;
-    top: -2rem;
-    margin: 0; }
-    .hero .hero-image figcaption {
+    left: 0;
+    margin: auto;
+    width: 9rem;
+    height: 9rem;
+    background: url(../svg/star.svg) no-repeat;
+    text-align: center; }
+    @media (min-width: 750px) {
+      .hero .meet-buddy {
+        right: 2rem;
+        left: auto; } }
+    .hero .meet-buddy a {
       position: absolute;
-      top: 2rem;
-      right: 1rem;
-      width: 45%;
-      font-size: .75rem; }
-  .hero .location {
-    display: block;
-    margin-top: 2rem;
-    color: #00274d;
-    text-indent: -1.75rem;
-    padding-left: 1.75rem; }
-  .hero svg {
-    display: inline-block;
-    width: 1rem;
-    margin-right: .5rem;
-    vertical-align: middle;
-    fill: #fff; }
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 75%;
+      height: 60px;
+      font-size: .875rem;
+      font-style: italic;
+      color: #97c3ea; }
 
 .featured-buddies {
   padding-top: 4rem; }
@@ -973,8 +981,27 @@ a {
 .help .help-text {
   max-width: 80%;
   margin: 0 auto 4rem auto; }
+  @media (min-width: 750px) {
+    .help .help-text {
+      margin-bottom: 0; } }
   .help .help-text h3 {
     margin-bottom: 1rem; }
+
+.building img {
+  margin-bottom: 1.5rem; }
+
+.location {
+  display: block;
+  margin-top: 2rem;
+  color: #00274d;
+  text-indent: -1.75rem;
+  padding-left: 1.75rem; }
+  .location svg {
+    display: inline-block;
+    width: 1rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+    fill: #fff; }
 
 .page header {
   padding: 2rem 0;
@@ -1300,7 +1327,7 @@ a {
   width: 3rem;
   border: 0;
   font-size: 2rem;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #00274d; }
   .favorite.not-favorited:after {
     content: '\2606'; }
