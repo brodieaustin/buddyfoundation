@@ -1,1 +1,53 @@
+.container{
+  position: relative;
+  max-width: $max-width;
+  margin: auto;
+  padding: 2rem;
+}
 
+.row{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  grid-row-gap: 2em;
+
+}
+
+.columns{
+  &.one{
+    grid-column: span 1;
+  }
+  &.two{
+    grid-column: span 2;
+  }
+  &.three{
+    grid-column: span 3;
+  }
+  &.four{
+    grid-column: span 4;
+  }
+  &.five{
+    grid-column: span 5;
+  }
+  &.six{
+    grid-column: span 6;
+  }
+  &.seven{
+    grid-column: span 7;
+  }
+  &.eight{
+    grid-column: span 8;
+  }
+  &.nine{
+    grid-column: span 9;
+  }
+  &.ten{
+    grid-column: span 10;
+  }
+  &.eleven{
+    grid-column: span 11;
+  }
+  &.twelve{
+    grid-column: span 12;
+  }
+}

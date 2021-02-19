@@ -1,18 +1,38 @@
 
 //colors
 $white: #fff;
+$black: #333;
 $light-grey: #f5f5f5;
 $dark-grey: #9797A4;
-$primary-color: #00274d; //navy
-$secondary-color: #d7e8f7; //light blue
-$accent-color: #d18316; //tan
+$light-blue: #EBF4FB;
+$medium-blue: #d7e8f7;
+$dark-blue: #00274d;
+$light-orange: #F7EAD7;
+$medium-organge: #E5BA7F;
+$dark-orange: #d18316;
+
+$primary-color:  $dark-blue;
+$secondary-color:  $medium-blue;
+$accent-color: $dark-orange;
 $border-color: lighten($dark-grey, 20%);
 $link-color: $primary-color;
-$font-color: #333;
+$font-color: $black;;
 
 //fonts
 $base-font-family: 'Open Sans', sans-serif;
 $secondary-font-family: 'Work Sans', sans-serif;
 
-//skeleton overrides
-$global-radius: 0;
+//layout
+$max-width: 1024px !default;
+
+//misc
+$border-radius-box: 1rem;
+$border-radius-img: 50%;
+
+//settings copied from skeleton
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;

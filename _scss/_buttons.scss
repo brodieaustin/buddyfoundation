@@ -1,12 +1,13 @@
 .button{
   display: inline-block;
   height: auto;
-  padding: .355rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: transparent;
   border: 2px solid $primary-color;
-  border-radius: 0;
+  border-radius: 1rem;
   text-decoration: none !important;
   letter-spacing: .5px;
+  line-height: 1;
   text-transform: uppercase;
   transition: opacity .2s ease;
   color: $primary-color;
