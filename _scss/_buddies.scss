@@ -129,6 +129,7 @@
 }
 
 .special-buddy{
+  display: flex;
   margin-bottom: .75rem;
   padding: .5rem;
   background-color: $light-orange;
@@ -136,9 +137,7 @@
   font-size: .875rem;
 
   .special-buddy-message{
-    display: inline-block;
-    width: 70%;
-    margin-left: 1rem;
+    margin: .5rem .5rem .5rem 1rem;
     line-height: 1.4;
     vertical-align: middle;
   }

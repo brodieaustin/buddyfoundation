@@ -12,6 +12,7 @@
   transition: opacity .2s ease;
   color: $primary-color;
   font-size: .875rem;
+  cursor: pointer;
 
   &.more{
     display: block;
