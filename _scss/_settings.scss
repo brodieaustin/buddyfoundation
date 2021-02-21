@@ -8,7 +8,7 @@ $light-blue: #EBF4FB;
 $medium-blue: #d7e8f7;
 $dark-blue: #00274d;
 $light-orange: #F7EAD7;
-$medium-organge: #E5BA7F;
+$medium-orange: #E5BA7F;
 $dark-orange: #d18316;
 
 $primary-color:  $dark-blue;
@@ -19,8 +19,8 @@ $link-color: $primary-color;
 $font-color: $black;;
 
 //fonts
-$base-font-family: 'Open Sans', sans-serif;
-$secondary-font-family: 'Work Sans', sans-serif;
+$base-font-family: 'Work Sans', sans-serif;
+$secondary-font-family: $base-font-family;
 
 //layout
 $max-width: 1024px !default;

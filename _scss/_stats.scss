@@ -1,0 +1,38 @@
+.stats{
+  @extend .unstyled-list;
+  margin-bottom: 2rem;
+}
+
+.stat{
+  display: inline-block;
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem;
+  border-radius: $border-radius-img;
+
+  &.total-adoptions{
+    background-color: $light-orange;
+  }
+
+  &.year-adoptions{
+    position: relative;
+    left: -1rem;
+    background-color: $medium-orange;
+  }
+
+  span{
+    display: block;
+  }
+
+  .stats-value{
+    margin-top: 20%;
+    font-size: 3rem;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+  }
+  .stats-label{
+    font-size: .875rem;
+    max-width: 80%;
+    margin: -.75rem auto .5rem;
+  }
+}
