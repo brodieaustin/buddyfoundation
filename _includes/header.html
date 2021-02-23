@@ -3,11 +3,26 @@
     <a href="{{ site.baseurl }}/" class="brand">
       <img src="{{ site.baseurl }}/assets/svg/logo.svg">
     </a>
-    <nav class="site-nav" role="navigation">
+    <nav class="site-nav" id="site-nav" role="navigation">
       <ul class="nav">
-        <li><a href="{{ site.baseurl }}/adopt/">Adopt</a></li>
-        <li><a href="{{ site.baseurl }}/donate/">Donate</a></li>
-        <li><a href="{{ site.baseurl }}/volunteer/">Volunteer</a></li>
+        <li class="has-subnav"><a href="{{ site.baseurl }}/adopt/">Adopt</a>
+          <ul class="subnav">
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Stories</a></li>
+          </ul>
+        </li>
+        <li class="has-subnav"><a href="{{ site.baseurl }}/donate/">Donate</a>
+          <ul class="subnav">
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Contribute</a></li>
+          </ul>
+        </li>
+        <li class="has-subnav"><a href="{{ site.baseurl }}/volunteer/">Volunteer</a>
+          <ul class="subnav">
+            <li><a href="#">Form</a></li>
+          </ul>
+        </li>
         <li><a href="{{ site.baseurl }}/about/">About</a></li>
       </ul>
     </nav>
