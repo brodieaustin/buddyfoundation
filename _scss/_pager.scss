@@ -1,18 +1,50 @@
 .pager{
+  margin-top: 4rem;
   text-align: center;
 }
 
-.page-control{
-  margin: 1rem .5rem;
-  background: $primary-color;
-  color: $white;
-  border: 0;
+.pager-controls{
+  @extend .unstyled-list;
+  margin: auto;
+  padding: 0;
+
+  li{
+    display: inline-block;
+    margin: 1rem .25rem;
+    padding: 0;
+  }
+}
+
+.pager-control{
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  padding: .25rem;
+  background-color: $medium-blue;
+  border-radius: $border-radius-img;
+  color: $dark-blue;
+  text-decoration: none !important;
+  vertical-align: middle;
 
   &.disabled{
-    background: $light-grey;
-    color: $dark-grey;
+    background: $light-grey !important;
+    color: $dark-grey !important;
     border: 0;
   }
+
+  &.prev, &.next{
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $medium-orange;
+    color: $dark-blue;
+    border-radius: $border-radius-box;
+  }
+}
+
+.current-page{
+  background-color: $dark-blue;
+  color: $light-blue;
 }
 
 .page-range{
