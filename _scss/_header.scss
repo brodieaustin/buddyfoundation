@@ -1,6 +1,5 @@
 .site-header{
   background: $primary-color;
-  overflow: hidden;
 
   .container{
     padding-top: 0;
@@ -9,7 +8,7 @@
 
   .brand{
     position: relative;
-    bottom: -.5rem;
+    bottom: -.425rem;
     display: inline-block;
     width: 6rem;
     height: auto;

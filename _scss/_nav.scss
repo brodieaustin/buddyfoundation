@@ -1,23 +1,51 @@
 .site-nav{
-  margin-top: 3.125rem;
+  margin-top: 2.75rem;
   display: none;
 
   @media screen and (#{$bp-larger-than-tablet}){
     display: block;
     float: right;
+    margin-right: -2rem;
   }
 }
 
 .nav{
   @extend .unstyled-list;
+  position: relative;
 
   li{
     display: inline-block;
+
+    &.has-subnav{
+      > a:after{
+        content: '\25BC';
+        display: inline-block;
+        margin-left: .325rem;
+        color: inherit;
+        font-size: .5rem;
+        vertical-align: middle;
+      }
+
+      &:last-child{
+        .subnav{
+          right: 0;
+          text-align: right;
+        }
+      }
+    }
+    &:hover, &:focus-within{
+      > a{
+        color: $medium-orange;
+      }
+      .subnav{
+        visibility: visible;
+      }
+    }
   }
 
   a{
     display: block;
-    margin-left: 1rem;
+    padding: .25rem .5rem;
     color: $font-color;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -25,8 +53,29 @@
     font-family: $secondary-font-family;
 
     @media screen and (#{$bp-larger-than-desktop}){
-      margin-left: 3rem;
+      padding: .5rem 1.5rem;
     }
+  }
+}
+
+.subnav{
+  visibility: hidden;
+  position: absolute;
+  min-width: 40%;
+  margin: 0;
+  padding: 3rem .75rem 1rem;
+  background-color: $dark-blue;
+  z-index: 1000;
+
+  li{
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  a{
+    padding: .25rem .75rem;
+    font-size: .875rem;
+    color: $medium-orange;
   }
 }
 
