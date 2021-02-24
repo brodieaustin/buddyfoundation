@@ -48,7 +48,7 @@ function watch() {
     [
     '*.html',
     'buddies/**/*.html',
-    'adopt/*.html',
+    'adopt/*',
     '_layouts/*.html',
     '_pages/*',
     '_posts/*',
@@ -59,4 +59,5 @@ function watch() {
 }
 
 gulp.task('css', gulp.parallel(css))
+gulp.task('build', gulp.series(jekyllBuild, browserSyncReload))
 gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch))
